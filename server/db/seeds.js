@@ -23,5 +23,5 @@ db.guests.insertMany([
         emailAddress: "mcvistface@hotmail.com",
         checkedIn: false
     }
-])
+]);
 
