@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Simon and Giulia's Cool Hotel</h1>
+    <guests-grid></guests-grid>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HotelService from '@/services/HotelService.js';
+import GuestsGrid from '@/components/GuestsGrid.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'guests-grid': GuestsGrid
+  },
+  methods: {
+
   }
 }
 </script>
@@ -21,7 +27,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
 }
