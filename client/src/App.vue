@@ -20,9 +20,7 @@ export default {
     'guests-grid': GuestsGrid,
     'guest-form': GuestForm
   },
-  methods: {
-
-  }
+  
 }
 </script>
 

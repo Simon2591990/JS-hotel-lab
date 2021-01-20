@@ -20,6 +20,7 @@ export default {
         return{
             name: '',
             email: '',
+            checkedIn: null
         }
     },
     methods: {

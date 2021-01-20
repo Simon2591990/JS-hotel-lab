@@ -55,10 +55,5 @@ button{
     margin: 5px;
     margin-bottom: 0px;
 }
-.true > button{
-    background: green;
-}
-.false{
-    background: red
-}
+
 </style>

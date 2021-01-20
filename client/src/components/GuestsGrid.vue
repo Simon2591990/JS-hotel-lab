@@ -1,6 +1,9 @@
 <template lang="html">
     <div id="guests-grid">
-        <guest-card v-for="(guest, index) in guests" :key="index" :guest="guest"></guest-card>
+        <h2>All Bookings</h2>
+        <h2 >Checked In</h2>
+        <h2>Checked Out</h2>
+        <guest-card v-if="page === 'all-bookings'" v-for="(guest, index) in guests" :key="index" :guest="guest"></guest-card>
     </div>
 </template>
 
@@ -13,7 +16,8 @@ export default {
     name: 'guests-grid',
     data(){
         return{
-            guests: []
+            guests: [],
+            page: 'all-bookings'
     };
     },
     mounted(){
