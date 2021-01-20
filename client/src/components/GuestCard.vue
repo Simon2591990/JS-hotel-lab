@@ -25,11 +25,15 @@ export default {
         checkIn(){
             this.guest.checkedIn = true
             this.checkedInStatus = 'true'
+            HotelService.updateGuest(this.guest)
+            .then(() => eventBus.$emit('guest-updated', this.guest._id))
 
         },
         checkOut(){
             this.guest.checkedIn = false
             this.checkedInStatus = 'false'
+            HotelService.updateGuest(this.guest)
+            .then(() => eventBus.$emit('guest-updated', this.guest._id))
         },
     },
     data(){

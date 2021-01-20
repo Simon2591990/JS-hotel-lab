@@ -2,8 +2,8 @@
 <div id="guest-form">
     <h3>New Booking:</h3>
     <form v-on:submit="addGuest" method="post">
-        <input type="text" id="name" v-model="name"  placeholder="Name:">
-        <input type="text" id="email" v-model="email" placeholder="Email:">
+        <input type="text" id="name" v-model="name"  placeholder="Name:" required>
+        <input type="text" id="email" v-model="email" placeholder="Email:" required>
         <button type="submit" id="submit">Submit</button>    
     </form>
 </div>
