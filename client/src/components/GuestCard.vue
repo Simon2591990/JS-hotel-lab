@@ -24,9 +24,17 @@ export default {
         },
         checkIn(){
             this.guest.checkedIn = true
+            this.checkedInStatus = 'true'
+
         },
         checkOut(){
             this.guest.checkedIn = false
+            this.checkedInStatus = 'false'
+        },
+    },
+    data(){
+        return{
+            checkedInStatus: 'false'
         }
     }
 }
@@ -38,7 +46,19 @@ export default {
     color: #030027;
     padding: 10px;
     border-radius: 7px;
-    border: 2px dotted 
+    border: 2px dotted; 
 }
-
+button{
+    background: #f4d5db;
+    border-radius: 7px;
+    border: 2px solid  #f4d5db;
+    margin: 5px;
+    margin-bottom: 0px;
+}
+.true > button{
+    background: green;
+}
+.false{
+    background: red
+}
 </style>

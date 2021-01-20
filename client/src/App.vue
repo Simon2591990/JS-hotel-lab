@@ -43,5 +43,9 @@ export default {
   display: grid;
   grid-template-columns: 1fr 0.2fr;
 }
+body{
+  background: aliceblue;
+  background: 
+}
 
 </style>
